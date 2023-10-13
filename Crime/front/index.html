@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My web page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Crime Prediction</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="start">Date</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="start" name="trip-start" value="2023-10-10" min="2000-10-01" max="2050-12-31" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="heure">Heure</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="heure" name="heure" min="0" max="24" />
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-25">
+                <label for="X">X</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="x" name="x" min="-1000" max="1000" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Y">Y</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="y" name="y" min="-1000" max="1000" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-25">
+                <label for="category">Category</label>
+            </div>
+            <div class="col-75">
+                <select name="Category" id="category-select"></select>
+                </br>
+            </div>
+        </div>
+
+        
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit" onclick="SendRequest()">
+        </div>
+
+    </div>
+
+    <div id="predict"></div>
+</body>
+<script src="script.js"></script>
+
+</html>
